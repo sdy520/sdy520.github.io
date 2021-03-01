@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>生日快乐</title>
+	<embed src="ly.mp3" hidden="true" autostart="true" loop="true">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url(beijing.jpg) no-repeat;
+			background-size: cover;
+		}
+		ul{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			bottom: 100px;
+			left: 50%;
+			margin-left: -100px; 
+			transform-style: preserve-3d;
+			
+			animation: sport 14s linear 0s infinite normal;
+		}
+		@keyframes sport{
+			from{
+				transform: rotateX(-15deg) rotateY(0deg);
+			}
+			to{
+				transform: rotateX(-15deg) rotateY(360deg);
+			}
+		}
+		ul:hover{
+			animation-play-state: paused;
+		}
+		ul:hover li img{
+			opacity: 0.5;
+		}
+		ul li:hover img{
+			opacity: 1;
+		}
+		ul li{
+			list-style: none;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: black;
+		}
+		ul li:nth-child(1){
+			transform: rotateY(60deg) translateZ(200px);
+		}
+		ul li:nth-child(2){
+			transform: rotateY(120deg) translateZ(200px);
+		}
+		ul li:nth-child(3){
+			transform: rotateY(180deg) translateZ(200px);
+		}
+		ul li:nth-child(4){
+			transform: rotateY(240deg) translateZ(200px);
+		}
+		ul li:nth-child(5){
+			transform: rotateY(300deg) translateZ(200px);
+		}
+		ul li:nth-child(6){
+			transform: rotateY(360deg) translateZ(200px);
+		}
+		ul li img{
+			width: 200px;
+			height: 200px;
+			border: 5px solid white;
+			box-sizing: border-box;
+		}
+		.kenan{
+			width: 239px;
+			height: 253px;
+			position: absolute;
+			bottom: 100px;
+			left: 100px;
+			animation: jump 15s linear 0s infinite
+				normal}
+		@keyframes jump{
+			0%{
+				left: 100px;
+				bottom: 100px;
+				opacity: 1;
+			}
+			20%{
+				left: 300px;
+				bottom: 300px;
+				opacity: 0;
+			}
+			40%{
+				left: 650px;
+				bottom: 650px;
+				opacity: 1;
+			}
+			55%{
+				left: 800px;
+				bottom: 650;
+				opacity: 0;
+			}
+			70%{
+				left: 1000px;
+				bottom: 450px;
+				opacity: 1;
+			}
+			80%{
+				left: 1400px;
+				bottom: 250px;
+				opacity: 0;
+			}
+			90%{
+				left: 1300px;
+				bottom: 150px;
+				opacity: 1;
+			}
+			95%{
+				left: 1200px;
+				bottom: 100px;
+				opacity: 0;
+			}
+			100%{
+				left: 100px;
+				bottom: 100px;
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="1.jpg"></li>
+		<li><img src="2.jpg"></li>
+		<li><img src="3.jpg"></li>
+		<li><img src="4.jpg"></li>
+		<li><img src="5.jpg"></li>
+		<li><img src="6.jpg"></li>
+	</ul>
+	<img src="dongtu.jpg" class="kenan">
+</body>
+</html>
